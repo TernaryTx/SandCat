@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<ForceField>
+ <AtomTypes>
+  <Type name="des-tip4pd-O" class="OW" mass="16.0" element="O"/>
+  <Type name="des-tip4pd-H" class="HW" mass="1.008" element="H"/>
+  <Type name="des-tip4pd-M" class="Vrt" mass="0.0"/>
+ </AtomTypes>
+ <Residues>
+  <Residue name="HOH">
+   <Atom name="O" type="des-tip4pd-O" charge="0.0"/>
+   <Atom name="H1" type="des-tip4pd-H" charge="0.58"/>
+   <Atom name="H2" type="des-tip4pd-H" charge="0.58"/>
+   <Atom name="M" type="des-tip4pd-M" charge="-1.16"/>
+   <VirtualSite type="average3" index="3" atom1="0" atom2="1" atom3="2" weight1="0.736124464" weight2="0.131937768" weight3="0.131937768"/>
+   <Bond from="0" to="1"/>
+   <Bond from="0" to="2"/>
+  </Residue>
+ </Residues>
+ <NonbondedForce coulomb14scale="0.8333" lj14scale="0.5">
+  <Atom type="des-tip4pd-O" charge="0.0" sigma="0.3165" epsilon="0.9365507"/>
+  <Atom type="des-tip4pd-H" charge="0.58" sigma="0.0" epsilon="0.0"/>
+  <Atom type="des-tip4pd-M" charge="-1.16" sigma="0.0" epsilon="0.0"/>
+ </NonbondedForce>
+</ForceField>

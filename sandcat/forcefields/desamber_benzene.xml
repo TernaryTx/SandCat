@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<ForceField>
+ <Info>
+  <Source>GAFF benzene probe (PRB) for DES-Amber mixed solvent</Source>
+ </Info>
+ <AtomTypes>
+  <Type name="des-prb-ca" class="ca" mass="12.01" element="C"/>
+  <Type name="des-prb-ha" class="ha" mass="1.008" element="H"/>
+ </AtomTypes>
+ <Residues>
+  <Residue name="PRB">
+   <Atom name="C1" type="des-prb-ca" charge="-0.117426"/>
+   <Atom name="H1" type="des-prb-ha" charge="0.117426"/>
+   <Atom name="C2" type="des-prb-ca" charge="-0.117426"/>
+   <Atom name="H2" type="des-prb-ha" charge="0.117426"/>
+   <Atom name="C3" type="des-prb-ca" charge="-0.117426"/>
+   <Atom name="H3" type="des-prb-ha" charge="0.117426"/>
+   <Atom name="C4" type="des-prb-ca" charge="-0.117426"/>
+   <Atom name="H4" type="des-prb-ha" charge="0.117426"/>
+   <Atom name="C5" type="des-prb-ca" charge="-0.117426"/>
+   <Atom name="H5" type="des-prb-ha" charge="0.117426"/>
+   <Atom name="C6" type="des-prb-ca" charge="-0.117426"/>
+   <Atom name="H6" type="des-prb-ha" charge="0.117426"/>
+   <Bond atomName1="C5" atomName2="C6"/>
+   <Bond atomName1="C4" atomName2="C5"/>
+   <Bond atomName1="C3" atomName2="C4"/>
+   <Bond atomName1="C2" atomName2="C3"/>
+   <Bond atomName1="C1" atomName2="C2"/>
+   <Bond atomName1="C1" atomName2="C6"/>
+   <Bond atomName1="C6" atomName2="H6"/>
+   <Bond atomName1="C5" atomName2="H5"/>
+   <Bond atomName1="C4" atomName2="H4"/>
+   <Bond atomName1="C3" atomName2="H3"/>
+   <Bond atomName1="C2" atomName2="H2"/>
+   <Bond atomName1="C1" atomName2="H1"/>
+  </Residue>
+ </Residues>
+ <HarmonicBondForce>
+  <Bond class1="ca" class2="ca" length="0.1398" k="316787.376"/>
+  <Bond class1="ca" class2="ha" length="0.1086" k="331138.496"/>
+ </HarmonicBondForce>
+ <HarmonicAngleForce>
+  <Angle class1="ca" class2="ca" class3="ca" angle="2.0947450705788175" k="575.442256"/>
+  <Angle class1="ca" class2="ca" class3="ha" angle="2.09230159915405" k="407.35424"/>
+ </HarmonicAngleForce>
+ <PeriodicTorsionForce ordering="amber">
+  <Proper class1="ca" class2="ca" class3="ca" class4="ca" periodicity1="2" phase1="3.1415939992386464" k1="15.167"/>
+  <Proper class1="ha" class2="ca" class3="ca" class4="ha" periodicity1="2" phase1="3.1415939992386464" k1="15.167"/>
+  <Proper class1="ca" class2="ca" class3="ca" class4="ha" periodicity1="2" phase1="3.1415939992386464" k1="15.167"/>
+  <Improper class1="ca" class2="ca" class3="ca" class4="ha" periodicity1="2" phase1="3.1415939992386464" k1="4.6024"/>
+  <Improper class1="ca" class2="ha" class3="ca" class4="ca" periodicity1="2" phase1="3.1415939992386464" k1="4.6024"/>
+ </PeriodicTorsionForce>
+ <NonbondedForce coulomb14scale="0.8333" lj14scale="0.5">
+  <UseAttributeFromResidue name="charge"/>
+  <Atom type="des-prb-ca" sigma="0.33152123" epsilon="0.4133792"/>
+  <Atom type="des-prb-ha" sigma="0.26254785" epsilon="0.0673624"/>
+ </NonbondedForce>
+</ForceField>

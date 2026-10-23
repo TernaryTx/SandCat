@@ -1,0 +1,3 @@
+recursive-include sandcat/forcefields *
+recursive-include sandcat/probes *
+include sandcat/tests/data/*.pdb

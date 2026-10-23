@@ -1,0 +1,80 @@
+DES-Amber-SF1.0 force-field parameters — license and attribution
+================================================================
+
+The following files in this directory encode the DES-Amber-SF1.0 protein force
+field and the TIP4P-D water model, and are derivative works of chemical-system
+data published by D. E. Shaw Research:
+
+    des-amber-SF1.0.xml    DES-Amber-SF1.0 protein parameters
+    desamber_tip4pd.xml    TIP4P-D 4-site water model
+
+They were converted to the OpenMM ForceField XML format from the DES-Amber-SF1.0
+GROMACS port and validated per-term against GROMACS. As derivatives of the
+DESRES chemical-system data they are redistributed under the DESRES VIPARR-FF
+license reproduced verbatim below, whose copyright notice, conditions, and
+disclaimer travel with this redistribution.
+
+(The third file in this directory, desamber_benzene.xml, is a GAFF benzene probe
+and is NOT a DESRES work; it is not covered by the license below.)
+
+
+Verbatim DESRES license
+-----------------------
+Source: https://github.com/DEShawResearch/viparr-ffpublic (LICENSE.txt)
+
+# VIPARR-FF LICENSE AGREEMENT
+
+Copyright 2018, D. E. Shaw Research. All rights reserved.
+
+Redistribution and use of the VIPARR-FF chemical system data, with or without
+modification, is permitted provided that the following conditions are met:
+
+* Redistributions of the chemical system data must retain the above copyright
+  notice, this list of conditions, and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice, this
+  list of conditions, and the following disclaimer in the documentation and/or
+  other materials provided with the distribution.
+
+Neither the name of D. E. Shaw Research nor the names of its contributors may be
+used to endorse or promote products derived from this software without specific
+prior written permission.
+
+THIS SOFTWARE AND DATA ARE PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE
+AND/OR DATA, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+Citations
+---------
+DES-Amber-SF1.0:
+  Piana S, Robustelli P, Tan D, Chen S, Shaw DE. "Development of a Force Field
+  for the Simulation of Single-Chain Proteins and Protein-Protein Complexes."
+  J. Chem. Theory Comput. 2020, 16(4), 2494-2507.
+
+TIP4P-D water:
+  Piana S, Donchev AG, Robustelli P, Shaw DE. "Water Dispersion Interactions
+  Strongly Influence Simulated Structural Properties of Disordered Protein
+  States." J. Phys. Chem. B 2015, 119(16), 5113-5123.
+
+
+Provenance and compliance notes (not legal advice)
+--------------------------------------------------
+* The GROMACS parameters these XML files were converted from were obtained from
+  github.com/paulrobustelli/Force-Fields, a third-party repository with no
+  LICENSE file whose README describes the DES-Amber GROMACS files as personal
+  implementations, not official D. E. Shaw Research releases. The official,
+  BSD-style-licensed source of the parameters is DESRES's viparr-ffpublic repo
+  (aa.DES-Amber-SF1.0). Verifying the vendored parameters against viparr-ffpublic
+  is recommended before relying on them in a commercial product.
+* The license above covers the force-field PARAMETERS only. DESRES distributes
+  its published MD TRAJECTORIES under separate, non-commercial terms; those are a
+  different asset and are not used or redistributed here.
+* For commercial use, have legal review and sign off on the above.
